@@ -9,6 +9,7 @@
     <title>Opetit Creux</title>
   </head>
 <body>
+  
     <header >
       <div id="p1">
       <div style="text-align: center;padding: center">
@@ -18,7 +19,7 @@
           <img  src="img\Opetit Creux(5).png" width="250" height = "140" alt="logo1">
        </div>
           <div id="mySidenav" class="sidenav">
-              <a id="closeBtn" href="index.php" class="close">Accueil</a>
+              <a id="closeBtn" href="index.html#" class="close">Accueil</a>
               <h1 class="titre">Opetit Creux  </h1>
               <ul>
                 <li><a href="#"> Carte</a></li>
@@ -54,35 +55,22 @@
         <div id="technicien" style="text-align: end">
           <img src="img\Opetit Creux(6).png" width=100px height=100px alt="technicien">
         </div>
-          <div style="text-align: center" text-item="center" id="form" >
-            <form action="./register.php" method="post">
-             <ul>
-              <li>
-                 <label for="name">Nom:</label>
-                 <input type="text" id="name" name="user_name" />
-              </li>
-              <br>
-              <li>
-                 <label for="prénom">Prénom:</label>
-                  <input type="text" id="prénom" prénom="user_name1" />
-              </li>
-              <br>
-               <li>
-                  <label for="mail">E-mail:</label>
-                   <input type="email" id="mail" name="user_mail" />
-              </li>
-               <br>
-              <li>
-                  <label for="mdp">Mot de passe :</label>
-                   <input type="password" name="mdp">
-              </li>
-              <br>
-            </ul>
-           </form>
-           <br>
-             <div class="button">
-               <button type="submit">Envoyer</button>
-             </div>
+          <div style="text-align: center" text-item="center" name="form" class="form"> 
+            <h1>Inscription</h1>
+            <form action=""  method ="post">
+                <label for="mail">Saisir le mail :</label>
+                <input type="email"  name="mail" /><br>
+                <label for="nom">Saisir le nom :</label>
+                <input type="text" name="nom"/> <br>
+                <label for="prenom">Saisir le prénom :</label>
+                <input type="text"  name="prenom"/><br>
+                <label for="password_utilisateur">Saisir votre mot de passe :</label>
+                <input type="password" name="password_utilisateur"><br>
+                <label for="password_verification">Confirmer votre mot de passe :</label>
+                <input type="password" name="password_verification"><br>
+                <input type="submit" value="Enregistrer" name="submit">
+              </form>
+            
           </div>
           <br>
             <p style="font-size: 20px;text-align: center">Nous plaçons nos clients et nos collaborateurs au coeur de nos préoccupations. Pour votre santé, pratiquez une activité physique régulière</p>
@@ -95,7 +83,7 @@
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
             <div style="text-align: right" >
-              <a id="mentions" href="mentionslegales.php#">Mentions légales</a><br>
+              <a id="mentions" href="mentionslegales.html#">Mentions légales</a><br>
               <a id="client" href="#">Espace-client</a>
            </div>
     </footer>
