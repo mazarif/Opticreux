@@ -1,0 +1,277 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/* Sidenav menu */
+.sidenav {
+    height: 240px;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -300px;
+    background-color: #fafbf4;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    border-radius: 30px;
+    border:solid  rgb(228, 118, 15);
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fef7f7;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #e4760f;
+    margin: 6px 0;
+  }
+
+/* header */
+#p1 {
+height: 140px;
+  border: solid;
+  background-color:#e8e8e8;
+  border-color: rgb(228, 118, 15);
+}
+
+/* Opetit Creux   */
+.titre{
+  color:rgb(228, 118, 15);
+}
+
+
+#texte{
+  border-radius: 30px;
+  align-items:left ;
+border: solid ;
+color:rgb(228, 118, 15);
+font-size: 30px;
+width: 400px;
+height: 150px;
+background-color:#e8e8e8;
+}
+
+/* Opetit Creux est le restaurant idéal pour bien manger. */
+.titre1{
+  text-align: center;
+  margin: auto;
+  border-radius: 30px;
+  font-size: 35px;
+  width: 1000px;
+  color:rgb(228, 118, 15);
+  background-color:#e8e8e8;
+  border: solid ;
+}
+
+/* footer */
+#footer{
+  height: 140px;
+  border: solid;
+  background-color:#e8e8e8;
+  border-color: rgb(228, 118, 15);
+}
+
+/* mentions légales */
+#mentions{
+  color: black;
+  text-decoration :underline ;
+  text-align:center;
+  font-size: 20px;
+}
+
+/* espace client */
+#client{
+  font-size: 20px;
+  color: black;
+  text-decoration :underline ;
+  text-align:center;
+}
+
+/* formulaire */
+.form{
+  text-align: center;
+  margin:auto;
+ border-radius: 30px;
+border: solid;
+color: rgb(228, 118, 15);
+  font-size: 30px;
+  border-color: rgb(228, 118, 15);
+  background-color:#e8e8e8;
+  width: 550px;
+  height: 300px;
+
+}
+
+/* envoyer message */
+.button{
+  color:rgb(228, 118, 15) ;
+   background-color:rgb(228, 118, 15); 
+}
+
+/* logo emplacement tel mail */
+#logoreso{
+display: flex;
+justify-content: space-around;
+}
+
+/* technicien espace client */
+#technicien{
+  border-radius: 30px;
+}
+::marker {
+  color: white;
+  font-size: 0px;
+}
+
+#lorem{
+  border-radius: 30px;
+  margin: 150px;
+  border: solid;
+  border-color:rgb(228, 118, 15) ;
+}
+
+.container{ 
+
+  width: 100%;
+  height:300px ;
+  display: flex;
+  
+}
+
+.item{
+  
+  display: flex;
+  width: 50%;
+  height: 300px;
+  justify-content: left;
+}
+
+.container1{
+
+  width: 100%;
+  height: 300;
+  display: flex;
+  
+}
+
+.item1{
+
+  flex-grow:1 ;
+}
+a {
+  padding: 16px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+.fa-facebook {
+border-radius: 20px;
+background: #3B5998;
+color: white;
+font-size: 30px;
+}
+.fa-twitter {
+border-radius: 20px;
+background: #55ACEE;
+color: white;
+font-size: 30px;
+}
+
+----------------------------------------------
+
+ /* Add a black background color to the top navigation */
+ .topnav {
+  background-color: #333;
+  /* overflow: hidden; */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #d78407;
+  text-align: center;
+  padding: 35px 35px;
+  text-decoration:darkgoldenrod;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:#dba607;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #dba607;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+} 
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
